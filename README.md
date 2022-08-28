@@ -1,2 +1,2 @@
 # portfolio
-🌸 portfolio yaya.dev
+🌸<em> portfolio yaya.dev </em>
