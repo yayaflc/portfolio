@@ -19,6 +19,10 @@ header{
     align-items: center;
 }
 
+footer{
+    background-color: #8A5757;
+    height: 60px;
+}
 
 .language {
     font-size: 40px;
@@ -141,7 +145,7 @@ header{
 .project-content{
     background-image: url("../images/bg_project_light.jpg");
     height: 1050px;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     right: 0;
 }
@@ -206,10 +210,48 @@ header{
 .studying-info{
     display: flex;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 190px;
 }
 
 .studying-text{
     opacity: 50%;
     font-size: 20px;
+}
+
+.about-me-content{
+    background-image: url("../images/bg_aboutme_light.jpg");
+    height: 1900px;
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-text{
+    align-self: flex-end;
+}
+
+.about-me-text{
+    width: 600px;
+}
+
+
+.bold-brown{
+    color: #8A5757;
+}
+
+.bold-pink{
+    color: #EABABA;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text{
+    font-size: 16px;
+    color: #EABABA;
 }
