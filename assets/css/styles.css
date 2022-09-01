@@ -29,6 +29,9 @@ header{
 footer{
     background-color: #8A5757;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .language {
@@ -170,7 +173,7 @@ footer{
     color: #EABABA;
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 60px;
     letter-spacing: 4px;
 }
 
@@ -232,6 +235,16 @@ footer{
     font-size: 20px;
 }
 
+.about-me-title{
+    font-family: 'Cherry Bomb', sans-serif;
+    font-size: 96px;
+    color: #8A5757;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+    letter-spacing: 4px;
+}
+
 .about-me-content{
     background-image: url("../images/bg_aboutme_light.jpg");
     width: 100%;
@@ -243,12 +256,15 @@ footer{
     background-repeat: no-repeat;
 }
 
-.second-text{
+#second-text{
+    display: flex;
     align-self: flex-end;
 }
 
 .about-me-text{
     width: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
@@ -260,11 +276,6 @@ footer{
     color: #EABABA;
 }
 
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .footer-text{
     font-size: 16px;
