@@ -165,11 +165,12 @@ footer{
 
 
 .project-content{
-    background-image: url("../images/bg_project_light.jpg");
-    height: 1050px;
+    /* background-image: url("../images/bg_project_light.jpg"); */
+    background-color: #8A5757;
+    height: 1024px;
     left: 0;
     right: 0;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .project-title{
@@ -178,9 +179,9 @@ footer{
     color: #EABABA;
     display: flex;
     justify-content: flex-end;
-    margin-right: 60px;
+    margin-right: 100px;
     letter-spacing: 4px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .projects{
@@ -243,26 +244,30 @@ footer{
     font-size: 20px;
 }
 
+.about-me{
+    padding-left: 150px;
+}
+
 .about-me-title{
     font-family: 'Cherry Bomb', sans-serif;
     font-size: 96px;
     color: #8A5757;
     display: flex;
     justify-content: flex-start;
-    margin-left: 100px;
     letter-spacing: 4px;
-    padding-top: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .about-me-content{
-    background-image: url("../images/bg_aboutme_light.jpg");
-    width: 100%;
-    height: 1900px;
+    /* background-image: url("../images/bg_aboutme_light.jpg"); */
+    background-color: #EABABA;
+    /* width: 100%; */
+    height: 1024px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    background-repeat: no-repeat;
 }
 
 #second-text{
@@ -272,7 +277,6 @@ footer{
 
 .about-me-text{
     width: 600px;
-    margin-left: 100px;
     margin-right: 100px;
 }
 
@@ -294,5 +298,20 @@ footer{
 .cat{
     width: 100px;
 }
-  
+
+.organic-shape1{
+    position: absolute;
+    display: block;
+    align-items: flex-start;
+    z-index: 1;
+    height: auto;
+}
+
+.organic-shape2{
+    position: absolute;
+    display: block;
+    right: -100px;
+    z-index: 1;
+    height: auto;
+}
   
