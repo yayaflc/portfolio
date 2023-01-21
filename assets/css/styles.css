@@ -165,6 +165,7 @@ footer{
     height: 1050px;
     left: 0;
     right: 0;
+    padding-top: 50px;
 }
 
 .project-title{
@@ -175,6 +176,7 @@ footer{
     justify-content: flex-end;
     margin-right: 60px;
     letter-spacing: 4px;
+    padding-bottom: 50px;
 }
 
 .projects{
@@ -222,6 +224,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 170px;
+    padding-top: 30px;
 }
 
 .studying-info{
@@ -243,6 +247,7 @@ footer{
     justify-content: flex-start;
     margin-left: 100px;
     letter-spacing: 4px;
+    padding-top: 30px;
 }
 
 .about-me-content{
