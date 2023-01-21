@@ -19,11 +19,12 @@ body{
 }
 
 header{
-    padding: 20px;
+    padding: 30px 30px;
     margin-bottom: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 48px;
 }
 
 footer{
@@ -46,7 +47,7 @@ footer{
     height: 35px;
     opacity: 50%;
     text-decoration: none;
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 .block{
@@ -55,7 +56,6 @@ footer{
 }
 
 .profile{
-    /* margin-left: 200px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +71,7 @@ footer{
 
 .location{
     font-size: 18px;
+    padding-top: 30px;
 }
 
 .icons-socials{
@@ -85,14 +86,14 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 18px;
 }
 
 .main-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-    height: 800px;
+    justify-content: center;
+    height: 1024px;
 }
 
 .block{
@@ -105,6 +106,7 @@ footer{
     color: #8A5757;
     margin: 0;
     line-height: 80%;
+    padding-bottom: 30px;
 }
 
 .name {
@@ -112,11 +114,14 @@ footer{
 }
 
 .mid-main-content{
-    margin-left: 60px;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     width: 600px;
-    
+}
+
+.text-main-content{
+    padding-bottom: 50px;
 }
 
 .bottom-main-content{
@@ -136,7 +141,6 @@ footer{
     width: 25px;
     opacity: 50%;
     text-decoration: none;
-    margin-left: 30px;
     margin-right: 10px;
 }
 
@@ -145,7 +149,7 @@ footer{
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 60px;
 }
 
 .wavy-background{
@@ -286,3 +290,9 @@ footer{
     font-size: 16px;
     color: #EABABA;
 }
+
+.cat{
+    width: 100px;
+}
+  
+  
