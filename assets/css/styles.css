@@ -177,7 +177,7 @@ footer {
 
 .project-content {
   background-color: #8a5757;
-  height: 1024px;
+  height:100vh;
   left: 0;
   right: 0;
   padding-top: 100px;
@@ -275,14 +275,14 @@ footer {
   display: flex;
   justify-content: flex-start;
   letter-spacing: 4px;
-  padding-top: 100px;
+  padding-top: 250px;
   padding-bottom: 100px;
 }
 
 .about-me-content {
   /* background-image: url("../images/bg_aboutme_light.jpg"); */
   /* width: 100%; */
-  height: 1024px;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
