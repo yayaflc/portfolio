@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>yaya.dev</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/cherry-blossom.png">
-
 </head>
 
 <body>
-
-    <div class="snap-scroll">
-        <header>
-            <a href=""> <img class="icons-header" src="assets/icons/globo.png"> </a>
-            <a href=""> <img class="icons-header" src="assets/icons/moon.png"> </a>
-            <a href=""> <img class="icons-header" src="assets/icons/menu.png"> </a>
-        </header>
+    <!-- ❤ Isso aqui é o checkbox do dark mode ❤ -->
+    <input type="checkbox" id="dark-mode" class="dark-mode-checkbox position--checkbox">
+    
+    <div class="snap-scroll theme-container">
         <section class="main-content">
+            <header>
+                <a href=""> <img class="icons-header" src="assets/icons/globo.png"> </a>
+                <a href=""> <img class="icons-header" src="assets/icons/moon.png"> </a>
+                <a href=""> <img class="icons-header" src="assets/icons/menu.png"> </a>
+            </header>
             <div class="block">
                 <div class="profile"> <img class="pp" src="assets/images/pp.png">
                     <p class="location"> <img class="gps" src="assets/icons/gps.png"> São José dos Campos, SP</p>
@@ -35,7 +36,8 @@
 
                 <div class="mid-main-content">
                     <h1 class="title-main-content">HI! <img class="cat" src="assets/images/cat.gif"> </h1>
-                    <p class="text-main-content"> I’m <b class="name">Yasmin Felicio.</b> Full-stack developer, Computer
+                    <p class="text-main-content"> I’m <b class="name">Yasmin Felicio.</b> Full-stack developer,
+                        Computer
                         Science student and Community Manager at @he4rt.</p>
 
                     <div class="bottom-main-content">
@@ -107,7 +109,8 @@
                             Photoshop.</b> Furthermore, I'm always studying to improve my soft skills.</p>
                 </div>
                 <div class="about-me-text">
-                    <p>My hobbies include walking in the park, photography and hanging out with the people that I love.
+                    <p>My hobbies include walking in the park, photography and hanging out with the people that I
+                        love.
                         I’m
                         also addicted to <b class="bold-brown">sushi</b> and <b class="bold-brown">cats.</b>
                     </p>
@@ -121,6 +124,21 @@
     </div>
 
     <script src="assets/js/script.js"></script>
+
+
+    <script>
+        // Esse codigo aqui só serve pra guardar o localstora o modo dark
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.querySelector('.dark-mode-checkbox');
+
+            checkbox.checked = localStorage.getItem('darkMode') === 'true';
+
+            checkbox.addEventListener('change', function (event) {
+                localStorage.setItem('darkMode', event.currentTarget.checked);
+            });
+        });
+    </script>
 </body>
 
 </html>

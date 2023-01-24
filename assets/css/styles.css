@@ -7,14 +7,51 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* LIGHT MODE */
+  --c-light-text: #8a5757;
+  --c-light-background: #f5f5f5;
+  --c-light-pink: #ff02f2;
+
+  /* DARK MODE */
+  --c-dark-text: #f5f5f5;
+  --c-dark-background: #8a5757;
+  --c-dark-pink: #712e6d;
+
+  --c-text-secondary: #f5f5f5;
+}
+
+.theme-container {
+  /* --c é só uma abreviação de Color nada de mais :D */
+  --c-text: var(--c-light-text);
+  --c-background: var(--c-light-background);
+
+  color: var(--c-text);
+  background-color: var(--c-background);
+}
+
+.dark-mode-checkbox:checked ~ .theme-container {
+  --c-text: var(--c-dark-text);
+  --c-text-secondary: var(--c-text-secondary);
+  --c-background: var(--c-dark-background);
+}
+
+.position--checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
 p {
   font-family: "Tuffy", sans-serif;
   font-size: 28px;
-  color: #f5f5f5;
+  color: var(--c-text);
 }
 
 body {
-  background-color: #eababa;
+  background-color: var(--c-background);
   overflow-y: hidden;
 }
 
@@ -25,10 +62,11 @@ header {
   justify-content: flex-end;
   align-items: center;
   font-size: 48px;
+  scroll-snap-align: top;
 }
 
 footer {
-  background-color: #8a5757;
+  background-color: var(--c-background);
   height: 60px;
   display: flex;
   align-items: center;
@@ -99,15 +137,11 @@ footer {
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100vh;
   background-image: url("../images/wavy.png");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
-
+  background-size: 9%;
 
   scroll-snap-align: center;
 }
@@ -115,14 +149,14 @@ footer {
 .title-main-content {
   font-family: "Cherry Bomb", sans-serif;
   font-size: 128px;
-  color: #8a5757;
+  color: var(--c-text);
   margin: 0;
   line-height: 80%;
   padding-bottom: 30px;
 }
 
 .name {
-  color: #8a5757;
+  color: var(--c-text);
 }
 
 .mid-main-content {
@@ -176,8 +210,8 @@ footer {
 }
 
 .project-content {
-  background-color: #8a5757;
-  height:100vh;
+  background-color: var(--c-background);
+  height: 100vh;
   left: 0;
   right: 0;
   padding-top: 100px;
@@ -190,7 +224,7 @@ footer {
 .project-title {
   font-family: "Cherry Bomb", sans-serif;
   font-size: 96px;
-  color: #eababa;
+  color: var(--c-text);
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
@@ -214,7 +248,7 @@ footer {
 .project-subtitle {
   font-family: "Tuffy", sans-serif;
   font-weight: 700;
-  color: #f5f5f5;
+  color: var(--c-text);
   font-size: 30px;
 }
 
@@ -235,7 +269,7 @@ footer {
 
 .icon-repo-text {
   font-family: "Tuffy", sans-serif;
-  color: #f5f5f5;
+  color: var(--c-text);
   font-size: 20px;
 }
 
@@ -261,21 +295,21 @@ footer {
 .about-me {
   padding-left: 150px;
   background-image: url(../svg/organic-shape2.svg);
-  background-position: right -30px bottom -35px;
+  background-position: right -30px bottom -125px;
   background-repeat: no-repeat;
   background-size: 1050px 1050px;
-
+  height: 100vh;
   scroll-snap-align: center;
 }
 
 .about-me-title {
   font-family: "Cherry Bomb", sans-serif;
   font-size: 96px;
-  color: #8a5757;
+  color: var(--c-text);
   display: flex;
   justify-content: flex-start;
   letter-spacing: 4px;
-  padding-top: 250px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -284,7 +318,6 @@ footer {
   /* width: 100%; */
   height: 100vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -294,6 +327,7 @@ footer {
 #second-text {
   display: flex;
   align-self: flex-end;
+  color: #f5f5f5;
 }
 
 .about-me-text {
@@ -302,34 +336,18 @@ footer {
 }
 
 .bold-brown {
-  color: #8a5757;
+  color: var(--c-text);
 }
 
 .bold-pink {
-  color: #eababa;
+  color: var(--c-light-pink);
 }
 
 .footer-text {
   font-size: 16px;
-  color: #eababa;
+  color: var(--c-text);
 }
 
 .cat {
   width: 100px;
-}
-
-.organic-shape1 {
-  position: absolute;
-  display: block;
-  align-items: flex-start;
-  z-index: 1;
-  height: auto;
-}
-
-.organic-shape2 {
-  position: absolute;
-  display: block;
-  right: -100px;
-  z-index: 1;
-  height: auto;
 }
