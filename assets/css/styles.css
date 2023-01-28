@@ -11,7 +11,7 @@
 p {
     font-family: 'Tuffy', sans-serif;
     font-size: 28px;
-    color: #F5F5F5;
+    color: #695454;
 }
 
 body{
@@ -52,10 +52,8 @@ footer{
 }
 
 .icons-header{
-    width: 35px;
-    height: 35px;
-    opacity: 50%;
-    text-decoration: none;
+    font-size: 28px;
+    color: #312424af;
     margin-left: 10px;
 }
 
@@ -72,9 +70,8 @@ footer{
 
 
 .gps{
-    width: 15px;
-    opacity: 50%;
-    text-decoration: none;
+    font-size: 17px;
+    color: #312424af;
     margin-left: 8px;
 }
 
@@ -84,11 +81,19 @@ footer{
 }
 
 .icons-socials{
-    width: 35px;
-    height: 35px;
-    opacity: 50%;
-    margin-left: 10px;
+    font-size: 35px;
+    margin: 0 10px;
     text-decoration: none;
+    color: #312424;
+    font-weight: 800;
+    transition: 0.8s;
+    -webkit-text-stroke: 0.5px;
+}
+
+.icons-socials:hover{
+    color: #8A5757;
+    scale: 1.05;
+    transition: 0.8s;
 }
 
 .icons-profile{
@@ -123,6 +128,23 @@ footer{
     color: #8A5757;
 }
 
+.heartlink{
+    text-decoration: none;
+    font-weight: bold;
+    color: #695454;
+    transition: 0.8s;
+}
+
+.heartlink:visited{
+    color: #695454;
+}
+
+.heartlink:hover{
+    color: #8A5757;
+    scale: 1.05;
+    transition: 0.8s;
+}
+
 .mid-main-content{
     margin-left: 100px;
     display: flex;
@@ -139,27 +161,19 @@ footer{
     align-items: center;
 }
 
-.hover-effect:hover > a{
-    color: rgba(0, 0, 0, 1);
-}
-
-.hover-effect:hover > img{
-    opacity: 100%;
-}
-
-.arrow{
-    width: 25px;
-    opacity: 50%;
-    text-decoration: none;
-    margin-right: 10px;
+.button-main-content:hover{
+    color: #8A5757;
+    transition: 0.8s;
+    scale: 1.02;
 }
 
 .button-main-content{
     font-family: 'Tuffy', sans-serif;
     font-size: 22px;
-    color: rgba(0, 0, 0, 0.5);
+    color: #695454;
     text-decoration: none;
     margin-right: 60px;
+    transition: 0.8s;
 }
 
 .wavy-background{
@@ -236,6 +250,7 @@ footer{
     font-family: 'Tuffy', sans-serif;
     color: #F5F5F5;
     font-size: 20px;
+    
 }
 
 .project-wm{
@@ -255,15 +270,17 @@ footer{
 .studying-text{
     opacity: 50%;
     font-size: 20px;
+    color: #F5F5F5;
 }
 
 .about-me{
-    padding-left: 150px;
+    padding-left: 200px;
     background-image: url(../svg/organic-shape2.svg);
     background-position: right -30px bottom -35px;
     background-repeat: no-repeat;
     background-size: 1050px 1050px;
     scroll-snap-align: center;
+    width: 1750px;
 }
 
 .about-me-title{
@@ -289,6 +306,11 @@ footer{
 #second-text{
     display: flex;
     align-self: flex-end;
+    
+}
+
+.second-text-white{
+    color: #F5F5F5;
 }
 
 .about-me-text{
