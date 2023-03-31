@@ -1,10 +1,12 @@
-# <p align="center">🌸 portfolio yaya.dev
+# <p align="center"> portfolio yayadev 🌸
+
+<p align='center'><i> my own portfolio made with HTML & CSS. </i>
+
+###
 
 <p align="center"><img src="assets/images/giphy.gif" width="70%">
 
 <br>
-
-*my own portfolio made using HTML & CSS.*
 
 ---
 
