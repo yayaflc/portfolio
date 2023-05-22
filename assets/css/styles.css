@@ -1,7 +1,20 @@
 @import url('http://fonts.cdnfonts.com/css/tuffy');
 @import url('https://fonts.googleapis.com/css?family=Cherry Bomb');
 
-*{
+:root {
+    --marrom-claro: #8A5757;
+    --marrom-medio: #695454;
+    --marrom-escuro: #312424;
+    --rosa-claro: #EABABA;
+    --branco: #F5F5F5;
+    --preto-transparente: #312424af;
+    --preto: #312424;
+
+    --tuffy: 'Tuffy', sans-serif;
+    --cherry: 'Cherry Bomb', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,16 +22,16 @@
 }
 
 p {
-    font-family: 'Tuffy', sans-serif;
+    font-family: var(--tuffy);
     font-size: 28px;
-    color: #695454;
+    color: var(--marrom-medio);
 }
 
-body{
-    background-color: #EABABA;
+body {
+    background-color: var(--rosa-claro);
 }
 
-header{
+header {
     padding: 30px 30px;
     margin-bottom: 100px;
     display: flex;
@@ -27,8 +40,8 @@ header{
     font-size: 48px;
 }
 
-footer{
-    background-color: #8A5757;
+footer {
+    background-color: var(--marrom-claro);
     height: 60px;
     display: flex;
     align-items: center;
@@ -51,59 +64,59 @@ footer{
     text-decoration: none;
 }
 
-.icons-header{
+.icons-header {
     font-size: 28px;
-    color: #312424af;
+    color: var(--preto-transparente);
     margin-left: 10px;
 }
 
-.block{
+.block {
     display: flex;
     justify-content: flex-end;
 }
 
-.profile{
+.profile {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.gps{
+.gps {
     font-size: 17px;
     color: #312424af;
     margin-left: 8px;
 }
 
-.location{
+.location {
     font-size: 18px;
     padding-top: 30px;
 }
 
-.icons-socials{
+.icons-socials {
     font-size: 35px;
     margin: 0 10px;
     text-decoration: none;
-    color: #312424;
+    color: var(--preto);
     font-weight: 800;
     transition: 0.8s;
     -webkit-text-stroke: 0.5px;
 }
 
-.icons-socials:hover{
-    color: #8A5757;
+.icons-socials:hover {
+    color: var(--marrom-claro);
     scale: 1.05;
     transition: 0.8s;
 }
 
-.icons-profile{
+.icons-profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 18px;
 }
 
-.main-content{
+.main-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -111,85 +124,85 @@ footer{
     scroll-snap-align: center;
 }
 
-.block{
+.block {
     margin-top: 80px;
 }
 
-.title-main-content{
+.title-main-content {
     font-family: 'Cherry Bomb', sans-serif;
     font-size: 128px;
-    color: #8A5757;
+    color: var(--marrom-claro);
     margin: 0;
     line-height: 80%;
     padding-bottom: 30px;
 }
 
 .name {
-    color: #8A5757;
+    color: var(--marrom-claro);
 }
 
-.heartlink{
+.heartlink {
     text-decoration: none;
     font-weight: bold;
-    color: #695454;
+    color: var(--marrom-medio);
     transition: 0.8s;
 }
 
-.heartlink:visited{
-    color: #695454;
+.heartlink:visited {
+    color: var(--marrom-medio);
 }
 
-.heartlink:hover{
-    color: #8A5757;
+.heartlink:hover {
+    color: var(--marrom-claro);
     scale: 1.05;
     transition: 0.8s;
 }
 
-.mid-main-content{
+.mid-main-content {
     margin-left: 100px;
     display: flex;
     flex-direction: column;
     width: 600px;
 }
 
-.text-main-content{
+.text-main-content {
     padding-bottom: 50px;
 }
 
-.bottom-main-content{
+.bottom-main-content {
     display: flex;
     align-items: center;
 }
 
-.button-main-content:hover{
-    color: #8A5757;
+.button-main-content:hover {
+    color: var(--marrom-claro);
     transition: 0.8s;
     scale: 1.02;
 }
 
-.button-main-content{
-    font-family: 'Tuffy', sans-serif;
+.button-main-content {
+    font-family: var(--tuffy);
     font-size: 22px;
-    color: #695454;
+    color: var(--marrom-medio);
     text-decoration: none;
     margin-right: 60px;
     transition: 0.8s;
 }
 
-.wavy-background{
+.wavy-background {
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0;
 }
 
-.wavy{
+.wavy {
     width: 150px;
 }
 
 
-.project-content{
-    background-color: #8A5757;
+.project-content {
+    background-color: var(--marrom-claro);
     height: 1024px;
     left: 0;
     right: 0;
@@ -200,10 +213,10 @@ footer{
     scroll-snap-align: center;
 }
 
-.project-title{
-    font-family: 'Cherry Bomb', sans-serif;
+.project-title {
+    font-family: var(--cherry);
     font-size: 96px;
-    color: #EABABA;
+    color: var(--rosa-claro);
     display: flex;
     justify-content: flex-end;
     margin-right: 100px;
@@ -211,69 +224,79 @@ footer{
     padding-bottom: 100px;
 }
 
-.projects{
+.projects {
    display: flex;
    justify-content: space-around;
    margin: 0 180px;
 }
 
-.project-infos{
+.project-infos {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
 }
 
-.project-subtitle{
-    font-family: 'Tuffy', sans-serif;
+.project-subtitle {
+    font-family: var(--tuffy);
     font-weight: 700;
-    color: #F5F5F5;
+    color: var(--branco);
     font-size: 30px;
 }
 
-.project-text{
+.project-text {
     font-size: 20px;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
 }
 
-.icon-repo{
-    width: 35px;
+.icons-repo {
+    font-size: 34px;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+    color: var(--branco);
+    transition: 0.8s;
+    -webkit-text-stroke: 0.5px;
 }
 
-.icon-repo-text{
-    font-family: 'Tuffy', sans-serif;
-    color: #F5F5F5;
+.icons-repo:hover {
+    color: var(--rosa-claro);
+    scale: 1.05;
+    transition: 0.8s;
+}
+
+.icons-repo-text {
+    font-family: var(--tuffy);
+    color: var(--branco);
     font-size: 20px;
     
 }
 
-.project-wm{
+.project-wm {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 170px;
     padding-top: 30px;
+    cursor: pointer;
 }
 
-.studying-info{
+.studying-info {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.studying-text{
+.studying-text {
     opacity: 50%;
     font-size: 20px;
-    color: #F5F5F5;
+    color: var(--branco);
 }
 
-.about-me{
+.about-me {
     padding-left: 200px;
     background-image: url(../svg/organic-shape2.svg);
     background-position: right -30px bottom -35px;
@@ -283,10 +306,10 @@ footer{
     width: 1750px;
 }
 
-.about-me-title{
-    font-family: 'Cherry Bomb', sans-serif;
+.about-me-title {
+    font-family: var(--cherry);
     font-size: 96px;
-    color: #8A5757;
+    color: var(--marrom-claro);
     display: flex;
     justify-content: flex-start;
     letter-spacing: 4px;
@@ -294,7 +317,7 @@ footer{
     padding-bottom: 100px;
 }
 
-.about-me-content{
+.about-me-content {
     height: 1024px;
     display: flex;
     justify-content: space-between;
@@ -303,41 +326,41 @@ footer{
     margin-bottom: 150px;
 }
 
-#second-text{
+#second-text {
     display: flex;
     align-self: flex-end;
     
 }
 
-.second-text-white{
-    color: #F5F5F5;
+.second-text-white {
+    color: var(--branco);
 }
 
-.about-me-text{
+.about-me-text {
     width: 600px;
     margin-right: 100px;
 }
 
 
-.bold-brown{
-    color: #8A5757;
+.bold-brown {
+    color: var(--marrom-claro);
 }
 
-.bold-pink{
-    color: #EABABA;
+.bold-pink {
+    color: var(--rosa-claro);
 }
 
 
-.footer-text{
+.footer-text {
     font-size: 16px;
-    color: #EABABA;
+    color: var(--rosa-claro);
 }
 
-.cat{
+.cat {
     width: 100px;
 }
 
-.organic-shape1{
+.organic-shape1 {
     position: absolute;
     display: block;
     align-items: flex-start;
@@ -345,11 +368,48 @@ footer{
     height: auto;
 }
 
-.organic-shape2{
+.organic-shape2 {
     position: absolute;
     display: block;
     right: -100px;
     z-index: 1;
     height: auto;
 }
-  
+
+.community-title {
+    font-family: var(--cherry);
+    font-size: 96px;
+    color: var(--marrom-claro);
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.community-content {
+    height: 560px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 200px;
+    padding-left: 400px;
+}
+
+.community-text {
+    width: 1000px;
+    margin-right: 100px;
+}
+
+.community-second-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.community-second-text p {
+    font-size: 26px;
+}
