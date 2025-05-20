@@ -6,7 +6,7 @@
 @import '@fontsource/inter/700.css';
 
 body {
-  background-image: url('src/assets/images/light-bg.png');
+  background-image: url('./assets/images/light-bg.png');
   background-size: 33.79px 33px;
   background-repeat: repeat;
   background-position: top left;

@@ -8,6 +8,9 @@ import './App.css'
 import ProjectCard from "./assets/components/ProjectCard";
 import Badge from "./assets/components/Badge";
 import ExperienceInfo from "./assets/components/ExperienceInfo";
+import ProfilePicture from "./assets/images/me.png"
+import Divider from "./assets/images/divider.svg"
+
 
 
 function App() {
@@ -30,7 +33,7 @@ function App() {
           </h3>
         </div>
         <div className="flex flex-col items-center justify-center ml-28">
-          <img src="src/assets/images/me.png" alt="portrait" className="w-[320px] h-[320px]" />
+          <img src={ProfilePicture} alt="portrait" className="w-[320px] h-[320px]" />
           <span className="flex items-center text-blackSecondary font-inter font-semibold text-[18px] mt-4 gap-2">
             <FaLocationDot className="text-pinkPrimary" />
             São José dos Campos, Brazil
@@ -43,7 +46,7 @@ function App() {
         </div>
       </div>
       <div className="flex flex-row items-center justify-center mb-24">
-        <img src="src/assets/images/divider.svg" alt="line" className="w-[90%]" />
+        <img src={Divider} alt="line" className="w-[90%]" />
       </div>
       <div className="grid grid-cols-2 gap-36">
         <div className="flex flex-col items-start gap-4">
