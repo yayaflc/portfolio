@@ -163,28 +163,28 @@ function App() {
           <div className="grid grid-cols-2 gap-x-36 gap-y-12 mt-4">
             <ProjectCard
               title="microfrontends"
-              description="Projeto para o estudo de microfrontends com Module Federation."
+              description="Project created to explore microfrontends using Module Federation."
               technologies={["ReactJS"]}
               githubUrl="https://github.com/yayaflc/microfrontends"
               externalUrl="https://to-do-list-yayaflc.vercel.app/"
             />
             <ProjectCard
               title="to-do list"
-              description="Lista de tarefas com adição, remoção e filtro."
+              description="Task list with features for adding, removing, and filtering items."
               technologies={["HTML", "CSS", "JavaScript"]}
               githubUrl="https://github.com/yayaflc/to-do-list"
               externalUrl="https://to-do-list-yayaflc.vercel.app/"
             />
             <ProjectCard
               title="animal quiz"
-              description="Quiz do mundo animal, com identificação de erros e acertos e somatória de pontos."
+              description="Animal-themed quiz with scoring and feedback for correct and incorrect answers."
               technologies={["HTML", "CSS", "JavaScript"]}
               githubUrl="https://github.com/yayaflc/quiz-v2"
               externalUrl="https://quiz-v2-seven.vercel.app/"
             />
             <ProjectCard
               title="conversor de texto"
-              description="Conversor de letras maiúsculas, minúsculas e especial."
+              description="Tool to convert text to uppercase, lowercase, or special case formats."
               technologies={["HTML", "CSS", "JavaScript"]}
               githubUrl="https://github.com/yayaflc/conversor-texto"
               externalUrl="https://conversor-texto.vercel.app/"
