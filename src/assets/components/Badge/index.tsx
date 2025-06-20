@@ -13,7 +13,7 @@ const Badge = ({
         {icon}
       </div>
       <div>
-        <p className="bg-pinkPrimary text-white px-3 py-1 h-full flex items-center rounded-r-full">
+        <p className="bg-pinkPrimary text-white px-3 py-1 h-full flex items-center rounded-r-full dark:bg-redPrimary dark:text-whiteSecondary">
             {name}
         </p>
       </div>

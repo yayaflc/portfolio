@@ -16,3 +16,7 @@ body {
   align-items: center; 
   min-height: 100vh;
 }
+
+html.dark body {
+  background-image: url('./assets/images/dark-bg.png');
+}
