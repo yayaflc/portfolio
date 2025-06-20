@@ -59,9 +59,15 @@ function App() {
               São José dos Campos, Brazil
             </span>
             <div className="flex flex-row items-center justify-center gap-4 mt-4">
-              <FaGithubAlt className="text-pinkPrimary text-[42px] dark:text-redPrimary" />
-              <FaLinkedin className="text-pinkPrimary text-[40px] dark:text-redPrimary" />
-              <TbMailFilled className="text-pinkPrimary text-[46px] dark:text-redPrimary" />
+              <a href="https://github.com/yayaflc" target="_blank">
+                <FaGithubAlt className="text-pinkPrimary text-[42px] dark:text-redPrimary hover:text-pinkHover hover:scale-110 transition-all duration-300 dark:hover:text-redSecondary" />
+              </a>
+              <a href="https://www.linkedin.com/in/yasminccfe/" target="_blank">
+                <FaLinkedin className="text-pinkPrimary text-[40px] dark:text-redPrimary hover:text-pinkHover hover:scale-110 transition-all duration-300 dark:hover:text-redSecondary" />
+              </a>
+              <a href="mailto:yasminccfe@gmail.com" target="_blank">
+                <TbMailFilled className="text-pinkPrimary text-[46px] dark:text-redPrimary hover:text-pinkHover hover:scale-110 transition-all duration-300 dark:hover:text-redSecondary" />
+              </a>
             </div>
           </div>
         </div>
@@ -196,9 +202,9 @@ function App() {
           by me
         </p>
         <div className="flex flex-row items-center gap-4 absolute right-8">
-          <FaGithubAlt className="text-pinkSecondary text-[32px] hover:text-white transition-colors duration-300" />
-          <FaLinkedin className="text-pinkSecondary text-[30px] hover:text-white transition-colors duration-300" />
-          <TbMailFilled className="text-pinkSecondary text-[36px] hover:text-white transition-colors duration-300" />
+          <FaGithubAlt className="text-pinkSecondary text-[32px] dark:text-pinkPrimary hover:text-pinkHover hover:scale-110 transition-all duration-300 dark:hover:text-redSecondary" />
+          <FaLinkedin className="text-pinkSecondary text-[30px] dark:text-pinkPrimary hover:text-pinkHover hover:scale-110 transition-all duration-300 dark:hover:text-redSecondary" />
+          <TbMailFilled className="text-pinkSecondary text-[36px] dark:text-pinkPrimary hover:text-pinkHover hover:scale-110 transition-all duration-300 dark:hover:text-redSecondary" />
         </div>
       </footer>
     </>

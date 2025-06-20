@@ -11,6 +11,7 @@ export default {
       colors: {
         pinkPrimary: "#F48FB1",
         pinkSecondary: "#F8BBD0",
+        pinkHover: "#F06292",
         blackPrimary: "#2E2E2E",
         blackSecondary: "#555555",
         grayPrimary: "#4C4A4A",
@@ -18,6 +19,7 @@ export default {
         whitePrimary: "#F5F5F5",
         whiteSecondary: "#BDBDBD",
         redPrimary: "#78223F",
+        redSecondary: "#521127",
       },
     },
   },

@@ -18,11 +18,11 @@ const ProjectCard = ({
   return (
       <div className="bg-pinkSecondary rounded-2xl shadow-md p-6 w-80 relative dark:bg-redPrimary">
         <div className="absolute top-4 right-4 flex gap-4 text-gray-800">
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">
-            <FaGithub className="text-xl hover:text-gray-600 dark:text-whiteSecondary dark:hover:text-graySecondary" />
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="text-inherit no-underline transition-transform hover:scale-125">
+            <FaGithub className="text-xl hover:text-pinkPrimary dark:text-whiteSecondary dark:hover:text-redSecondary transition-colors duration-800" />
           </a>
-          <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">
-            <FaExternalLinkAlt className="text-xl hover:text-gray-600 dark:text-whiteSecondary dark:hover:text-graySecondary" />
+          <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="text-inherit no-underline transition-transform hover:scale-125">
+            <FaExternalLinkAlt className="text-xl hover:text-pinkPrimary dark:text-whiteSecondary dark:hover:text-redSecondary transition-colors duration-800" />
           </a>
         </div>
         <h3 className="text-xl text-left font-bold text-gray-900 mb-2 dark:text-whiteSecondary">{title}</h3>
