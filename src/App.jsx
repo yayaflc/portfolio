@@ -183,7 +183,7 @@ function App() {
               externalUrl="https://quiz-v2-seven.vercel.app/"
             />
             <ProjectCard
-              title="conversor de texto"
+              title="text converter"
               description="Tool to convert text to uppercase, lowercase, or special case formats."
               technologies={["HTML", "CSS", "JavaScript"]}
               githubUrl="https://github.com/yayaflc/conversor-texto"
