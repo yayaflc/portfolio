@@ -80,22 +80,22 @@ function App() {
         　　　　　　　　　　                 (¸.·´ (¸.·'* ♡`}
         </p>
         <div className="mt-20 mb-32">
-          <h2 className="text-blackPrimary font-rubik font-bold text-[26px] dark:text-whiteSecondary">
+          <h2 className="text-blackPrimary font-rubik font-bold text-[26px] dark:text-whiteSecondary ml-8 mb-8 mt-8 absolute">
             about me
           </h2>
           <div className="relative w-full max-w-5xl mx-auto">
-          <Figure className="w-full max-w-4xl mx-auto object-contain text-pinkSecondary dark:text-redPrimary" />
-            <div className="absolute inset-0 flex flex-col justify-center p-12 space-y-8 text-blackSecondary font-inter font-medium text-left">
-              <p className="max-w-2xl ml-12 dark:text-whiteSecondary">
-                I’ve always been passionate about technology. My first contact with “programming” was through my girly Tumblr blog, where I played around with HTML and CSS. I took a technical computing course in high school, but it wasn’t until 2022 that I decided to pursue tech professionally.
-              </p>
-              <p className="max-w-2xl ml-28 dark:text-whiteSecondary">
-                I’m an enthusiast of the tech community, especially those initiatives focused on supporting girls in tech — they were a huge source of motivation when I started.
-              </p>
-              <p className="max-w-2xl ml-36 dark:text-whiteSecondary">
-                Outside of tech, I enjoy photography, video games, and anime (yep, kinda nerdy — I know!). I’m also miserably trying to live a healthy life by going to the gym. Oh, and I’m the proud cat mom of two beautiful fur babies.
-              </p>
-            </div>
+            <Figure className="w-full max-w-4xl mx-auto object-contain text-pinkSecondary dark:text-redPrimary" />
+              <div className="absolute inset-0 flex flex-col justify-center p-12 space-y-8 text-blackSecondary font-inter font-medium text-left">
+                <p className="max-w-2xl ml-12 dark:text-whiteSecondary">
+                  I’ve always been passionate about technology. My first contact with “programming” was through my girly Tumblr blog, where I played around with HTML and CSS. I took a technical computing course in high school, but it wasn’t until 2022 that I decided to pursue tech professionally.
+                </p>
+                <p className="max-w-2xl ml-28 dark:text-whiteSecondary">
+                  I’m an enthusiast of the tech community, especially those initiatives focused on supporting girls in tech — they were a huge source of motivation when I started.
+                </p>
+                <p className="max-w-2xl ml-36 dark:text-whiteSecondary">
+                  Outside of tech, I enjoy photography, video games, and anime (yep, kinda nerdy — I know!). I’m also miserably trying to live a healthy life by going to the gym. Oh, and I’m the proud cat mom of two beautiful fur babies.
+                </p>
+              </div>
           </div>
         </div>
         <Divider className="w-full max-w-5xl mx-auto mb-16 text-pinkPrimary dark:text-redPrimary" />
