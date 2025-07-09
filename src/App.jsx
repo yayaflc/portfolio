@@ -105,19 +105,19 @@ function App() {
               experiences
             </h2>
             <ExperienceInfo
-              icon={<FaBriefcase />}
+              icon={<FaBriefcase size={28} />}
               title="FullStack Software Developer"
               text="Grupo Boticário"
               date="Jun 2023 - Present"
             />
             <ExperienceInfo
-              icon={<FaBriefcase />}
+              icon={<FaBriefcase size={28} />}
               title="Tech Community Manager"
               text="He4rt Developers"
               date="Nov 2022 - May 2024"
             />
             <ExperienceInfo
-              icon={<FaGraduationCap />}
+              icon={<FaGraduationCap size={30} />}
               title="Computing Technical Course"
               text="ETEC"
               date="Jan 2017 - Dez 2019"
