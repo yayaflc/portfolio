@@ -166,7 +166,7 @@ function App() {
               description="Project created to explore microfrontends using Module Federation."
               technologies={["ReactJS"]}
               githubUrl="https://github.com/yayaflc/microfrontends"
-              externalUrl="https://to-do-list-yayaflc.vercel.app/"
+              externalUrl="https://github.com/yayaflc/microfrontends"
             />
             <ProjectCard
               title="to-do list"
