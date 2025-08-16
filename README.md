@@ -1,12 +1,14 @@
-# React + Vite
+# <p align="center"> my portfolio 🎀💐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align='center'><i> made with React. </i>
 
-Currently, two official plugins are available:
+###
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center"><img src="./src/assets/images/print-readme.png" width="70%">
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+<p align="center"> <a href="https://www.figma.com/design/p8DG2bEUZZmKmWu2EupSbr/Portfolio?node-id=0-1&t=VxBh08KKOVVHql4f-1"> <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> </a> 
+<a href="https://portfolio-yayaflcs-projects.vercel.app/"> <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"> </a>
