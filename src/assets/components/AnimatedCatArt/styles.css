@@ -1,0 +1,103 @@
+.cat-art-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cat-art {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: monospace;
+  line-height: 1.4;
+  white-space: pre;
+  transition: all 0.3s ease;
+}
+
+.cat-art.light-mode {
+  color: #555555;
+  text-shadow: 0 0 15px rgba(244, 143, 177, 0.6),
+               0 0 25px rgba(244, 143, 177, 0.4),
+               0 0 35px rgba(244, 143, 177, 0.2);
+}
+
+.cat-art.dark-mode {
+  color: #BDBDBD;
+  text-shadow: 0 0 20px rgba(248, 187, 208, 0.7),
+               0 0 35px rgba(248, 187, 208, 0.5),
+               0 0 50px rgba(248, 187, 208, 0.3);
+}
+
+.magic-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.magic-particle {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  font-weight: 600;
+  animation: float-sparkle infinite ease-in-out;
+  will-change: transform, opacity;
+}
+
+.magic-particle.light-mode {
+  color: #F48FB1;
+  text-shadow: 0 0 4px rgba(244, 143, 177, 0.6),
+               0 0 8px rgba(244, 143, 177, 0.4),
+               0 0 12px rgba(244, 143, 177, 0.2);
+}
+
+.magic-particle.dark-mode {
+  color: #F48FB1;
+  text-shadow: 0 0 6px rgba(244, 143, 177, 0.8),
+               0 0 12px rgba(244, 143, 177, 0.6),
+               0 0 18px rgba(244, 143, 177, 0.4);
+}
+
+@keyframes float-sparkle {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-15px) translateX(5px) rotate(180deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.7;
+  }
+}
+
+.magic-particle:nth-child(odd) {
+  animation-direction: alternate;
+}
+
+.magic-particle:nth-child(3n) {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.magic-particle:nth-child(4n) {
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes gentle-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px currentColor);
+  }
+  50% {
+    filter: drop-shadow(0 0 6px currentColor);
+  }
+}
+
+.cat-art {
+  animation: gentle-glow 4s ease-in-out infinite;
+}

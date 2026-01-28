@@ -1,0 +1,111 @@
+.kaomoji-container {
+  position: relative;
+  display: inline-block;
+}
+
+.kaomoji-ascii {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: monospace;
+  line-height: 0.9;
+  white-space: pre;
+  transition: opacity 0.7s ease;
+  font-size: 16px;
+  opacity: 0.85;
+  user-select: none;
+}
+
+.kaomoji-ascii:hover {
+  opacity: 1;
+}
+
+.kaomoji-ascii.light-mode {
+  color: #555555;
+  text-shadow: 0 0 15px rgba(244, 143, 177, 0.6),
+               0 0 25px rgba(244, 143, 177, 0.4),
+               0 0 35px rgba(244, 143, 177, 0.2);
+}
+
+.kaomoji-ascii.dark-mode {
+  color: #BDBDBD;
+  text-shadow: 0 0 20px rgba(248, 187, 208, 0.7),
+               0 0 35px rgba(248, 187, 208, 0.5),
+               0 0 50px rgba(248, 187, 208, 0.3);
+}
+
+.kaomoji-particles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.kaomoji-magic-particle {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  font-weight: 600;
+  font-size: 18px;
+  animation: float-gentle infinite ease-in-out;
+  will-change: transform, opacity;
+}
+
+.kaomoji-magic-particle.light-mode {
+  color: #F48FB1;
+  text-shadow: 0 0 10px rgba(244, 143, 177, 0.9),
+               0 0 18px rgba(244, 143, 177, 0.7),
+               0 0 28px rgba(244, 143, 177, 0.4);
+}
+
+.kaomoji-magic-particle.dark-mode {
+  color: #F8BBD0;
+  text-shadow: 0 0 12px rgba(248, 187, 208, 1),
+               0 0 22px rgba(248, 187, 208, 0.8),
+               0 0 35px rgba(248, 187, 208, 0.5);
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-12px) translateX(3px) rotate(120deg);
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.8;
+  }
+}
+
+.kaomoji-magic-particle:nth-child(odd) {
+  animation-direction: alternate;
+}
+
+.kaomoji-magic-particle:nth-child(3n) {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kaomoji-magic-particle:nth-child(4n) {
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.kaomoji-ascii {
+  animation: gentle-pulse 4s ease-in-out infinite;
+}
+
+@keyframes gentle-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 3px currentColor);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px currentColor);
+  }
+}
