@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #F48FB1 transparent;
+}
+
+html.dark {
+  scrollbar-color: #78223F transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #F48FB1;
+  border-radius: 10px;
+}
+
+html.dark::-webkit-scrollbar-thumb {
+  background: #78223F;
+}
+
 html, body, #root {
   width: 100%;
   min-width: 0;
@@ -9,4 +38,25 @@ html, body, #root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+* {
+  transition: background-color 0.6s ease-in-out, 
+              color 0.6s ease-in-out,
+              background-image 0.6s ease-in-out,
+              border-color 0.6s ease-in-out,
+              text-shadow 0.6s ease-in-out,
+              box-shadow 0.6s ease-in-out;
+}
+
+a, button, input, textarea, select {
+  transition: background-color 0.6s ease-in-out, 
+              color 0.6s ease-in-out,
+              transform 0.2s ease,
+              opacity 0.6s ease-in-out;
+}
+
+.no-transition,
+.no-transition * {
+  transition: none !important;
 }
